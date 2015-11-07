@@ -1,0 +1,36 @@
+.parent {
+    border: 5px solid lightcoral;
+}
+
+.item {
+    margin: 5px;
+    background: DeepSkyBlue;
+    color: white;
+    text-align: center;
+    line-height:50px;
+    font-weight:600;
+}
+
+/*  display: flex   */
+
+.parent {
+    height: 200px;
+    display: flex;
+    /*flex-direction: row-reverse; !* Orders them in backwards order and to thr right *!*/
+    /*flex-direction: column; !* sets them in columns *!*/
+    /*flex-wrap: wrap; !* nowrap by default and fit the items be default into the parent *!*/
+    justify-content: space-between; /* its an align right, also center, space-between (evenly spaces elements in parent),
+     space-around(takes have the space between 1-2 and puts it before and after starting/ending elements */
+    align-items: center; /* aligning Y-axis flex-end(bottom), flex-start(top), center, stretch(if height is not defined)
+     baseline aligns content's bottom no matter the size */
+
+
+}
+
+.item {
+    width: 50px;
+}
+
+/*.item:nth-child(3) {*/
+    /*font-size: 40px;*/
+/*}*/
